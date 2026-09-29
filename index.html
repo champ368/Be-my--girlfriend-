@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Be My Girlfriend?</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background: pink;
+            padding-top: 100px;
+        }
+
+        h1 {
+            font-size: 35px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 20px;
+            border: none;
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+        #yes {
+            background: green;
+            color: white;
+        }
+
+        #no {
+            background: red;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Will you be my girlfriend? ❤️</h1>
+
+    <button id="yes" onclick="yesClicked()">YES ❤️</button>
+    <button id="no" onclick="noClicked()">NO 😭</button>
+
+    <script>
+        function yesClicked() {
+            document.querySelector("h1").innerHTML =
+                "Yayyy! ❤️ You said YES!";
+        }
+
+        function noClicked() {
+            alert("Are you sure? 😂");
+        }
+    </script>
+
+</body>
+      </html>
